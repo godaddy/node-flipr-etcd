@@ -4,7 +4,6 @@
   "description": "Flipr source to retrieve config from etcd:  a distributed, consistent, partition-tolerant key/value store",
   "main": "lib/flipr-etcd.js",
   "scripts": {
-    "_cover": "istanbul cover --root lib --include-all-sources --report text-summary _mocha",
     "benchmark": "node ./benchmark/percent.js && node ./benchmark/list.js && node ./benchmark/equal.js",
     "check-coverage": "istanbul check-coverage --statements 100 --functions 100 --branches 100 --lines 100",
     "integration": "mocha ./integration",
@@ -13,7 +12,7 @@
     "report": "istanbul report html && istanbul report text-summary",
     "test-debug": "mocha --debug-brk",
     "test": "npm run lint && npm run unit && npm run report && (npm run check-coverage || npm run open-coverage)",
-    "unit": "npm run _cover -- --dir coverage/unit -- --recursive test"
+    "unit": "istanbul cover --root lib --include-all-sources --report text-summary _mocha"
   },
   "repository": {
     "type": "git",
