@@ -2,6 +2,7 @@ node-flipr-etcd
 ===============
 
 [![NPM](https://nodei.co/npm/flipr-etcd.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/flipr-etcd/)
+
 [![Build Status](https://travis-ci.org/godaddy/node-flipr-etcd.svg)](https://travis-ci.org/godaddy/node-flipr-etcd)
 
 **Stability: 1 - Experimental** 
