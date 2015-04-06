@@ -31,6 +31,15 @@ describe('flipr-etcd', function(){
     expect(nodeEtcd.host).to.equal('a');
     expect(nodeEtcd.port).to.equal('b');
   });
+  it('sends hosts to node-etcd instead of host/port if hosts has at least one value', function(){
+    sut = new Sut({
+      hosts: ['10.0.0.1:2379'],
+      ssl: 'sslopts'
+    });
+    nodeEtcd = NodeEtcdFixture.current();
+    expect(nodeEtcd.host).to.eql(['10.0.0.1:2379']);
+    expect(nodeEtcd.port).to.equal('sslopts');
+  });
   it('forces instantiation', function(){
     sut = Sut(); //jshint ignore:line
     expect(sut).to.be.instanceof(Sut);
