@@ -77,6 +77,7 @@ The `events` property on the source exposes an object with all the event names/k
 # Options
 
 * `host` - _optional_ - string - The etcd host.  Defaults to `"127.0.0.1"`.
+* `hosts` - _optional_ - array of strings - List of etcd hosts (if using cluster).  Will override values entered into `host` and `port`.  Strings in array should contain the IP and port of etcd nodes in this format: `["10.0.0.1:2379"]`.  Defaults to `[]`;
 * `port` - _optional_ - number - The etcd port.  Defaults to `4001`.
 * `directory` - _recommended_ - string - The etcd directory which contains your config key.  Typically, this would be your application name.  Must be url-safe, stick to letters, numbers, and hyphens.  Defaults to `"default"`.
 * `key` - _recommended_ - string - The etcd key that your flipr config will be published to.  You may want your key to indicate what environment your in if you share the same etcd cluster across multiple environments.  Or, if you have a unique etcd cluster per environment, you can just leave this as the default `"config"`.
