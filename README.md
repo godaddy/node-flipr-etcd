@@ -1,6 +1,10 @@
 node-flipr-etcd
 ===============
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+**This project is no longer maintained, please contact oss@godaddy.com if you would like to become a maintainer**
+
 [![NPM](https://nodei.co/npm/flipr-etcd.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/flipr-etcd/)
 
 [![Build Status](https://travis-ci.org/godaddy/node-flipr-etcd.svg)](https://travis-ci.org/godaddy/node-flipr-etcd)
